@@ -4,12 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>Boostrap 4.5.3 Template Header Left Aside</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <title>Boostrap 4.5.3 Template Header Left Aside</title>
-
+    <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom inline file styles-->
     <style>
         .bd-placeholder-img {
@@ -29,101 +27,134 @@
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
+    <link href="./assets/dashboard/dashboard.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Company name</a>
+    <nav class="navbar navbar-dark sticky-top mnavbar-bg-color flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">SUPPORT</a>
       <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+      
       <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-user arrow-right mr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="account-user-avatar">
+              <img class="rounded-circle" src="assets/img/avatar-1.jpg" alt="user-image"/>
+            </span>
+            <span>
+              <span class="account-user-name">Mary An Commander</span>
+              <span class="account-position">CEO</span>
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-animated dropdown-menu-right profile-dropdown">
+            <a class="admin-control dropdown-item">
+              <i class="fa fa-th-large" aria-hidden="true"></i>
+              <span>Admin Control Panel</span>
+            </a>
+            <a class="logout dropdown-item">
+              <i class="fa fa-sign-out" aria-hidden="true"></i>
+              <span>Logout</span>
+            </a>
+          </div>
         </li>
       </ul>
     </nav>
     
     <div class="container-fluid">
       <div class="row">
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-          <div class="sidebar-sticky pt-3">
-            <ul class="nav flex-column">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block sidebar collapse">
+          <!-- <div class="sidebar-sticky">
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span>Open Tickets (10)</span>
+              <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report"></a>
+            </h6>
+            <ul class="flex-column dropdown-menu">
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <a class="nav-link" href="#">
                   <span data-feather="home"></span>
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
+
                   Orders
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="shopping-cart"></span>
+
                   Products
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="users"></span>
+
                   Customers
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="bar-chart-2"></span>
+
                   Reports
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="layers"></span>
+
                   Integrations
                 </a>
               </li>
             </ul>
-    
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>Saved reports</span>
-              <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
-                <span data-feather="plus-circle"></span>
-              </a>
+          </div> -->
+          <div class="sidebar-sticky">
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center dropdown-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+              <span>Open Tickets (10)</span>
+              <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report"></a>
             </h6>
-            <ul class="nav flex-column mb-2">
+            <ul id="navbarsExample03" class="flex-column dropdown-menu">
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="file-text"></span>
-                  Current month
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="file-text"></span>
-                  Last quarter
+
+                  Orders
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="file-text"></span>
-                  Social engagement
+
+                  Products
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="file-text"></span>
-                  Year-end sale
+
+                  Customers
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+
+                  Reports
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+
+                  Integrations
                 </a>
               </li>
             </ul>
           </div>
         </nav>
     
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-9 px-md-4">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 class="h2">Dashboard</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
@@ -275,6 +306,7 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="assets/dashboard/dashboard.js"></script>
   </body>
 </html>
