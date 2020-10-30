@@ -77,7 +77,8 @@ body {
 
 .sidebar li.nav-item
 {
-  padding: 29px 25px
+  padding: 29px 25px;
+  border-bottom: 0.15rem solid #f0f0f0;
 }
 
 .nav-item.sidebar-open-tickets, .nav-item.sidebar-open-tickets .nav-link
@@ -93,6 +94,9 @@ body {
   min-width: 0;
   width: 100%;
   border: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
 }
 /*
  * Navbar
@@ -210,4 +214,62 @@ body {
 	white-space: nowrap;
 	background-color: transparent;
 	border: 0;
+}
+
+.sidebar-sticky .nav-item > .nav-link .nav-item-row
+{
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  white-space: nowrap;
+  font-size: 20px;
+  width: 100%;
+}
+
+.sidebar-sticky .nav-item > .nav-link
+{
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.sidebar-sticky .nav-item > .nav-link.nav-link-expand
+{
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.nav-item-row .item-ticket-desc
+{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 40%;
+  margin-right: auto !important;
+}
+
+.nav-link .item-date {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.item-ticket-type {
+	border-radius: 0;
+	font-weight: 500;
+	font-size: inherit;
+	padding: 0.50em;
+	margin-top: 0.25em;
+}
+
+.badge-warning {
+	color: #feffff;
+	background-color: #ffc75b;
 }
