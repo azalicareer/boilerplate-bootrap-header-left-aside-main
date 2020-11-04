@@ -2,6 +2,24 @@ body {
   font-size: .875rem;
 }
 
+main
+{
+  background: #f0f0f0;
+}
+
+pre {
+	display: block;
+	font-size: 113.5%;
+	color: #536b77;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom: 2px solid #eee;
+}
+
 .feather {
   width: 16px;
   height: 16px;
@@ -273,3 +291,73 @@ body {
 	color: #feffff;
 	background-color: #ffc75b;
 }
+
+/* main div */
+.ticket-main
+{
+  padding: 1.5rem;
+}
+
+.ticket-details {
+	background: #fff;
+	color: #546f7a;
+	padding: 1.8rem;
+	box-shadow: 1px 1px 3px rgba(91, 84, 84, 0.63);
+}
+
+.ticker-header
+{
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.ticker-header .ticket-desc
+{
+  font-weight: bold;
+  font-size: 1.1rem;
+  
+}
+
+.ticker-header div
+{
+  padding: 0.3rem;
+}
+
+.ticker-header .ticket-created
+{
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.oc-btn
+{
+  border: 0;
+  border-radius: 0;
+  margin: 1rem 0.5rem;
+  padding: 0.6rem 3rem;
+  font-size: 18px;
+}
+
+.conv-div {
+	padding: 1.5rem;
+}
+
+.conv
+{
+  display: block;
+}
+
+.conv-name {
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.conv-time {
+	color: #bababa;
+}
+
+.con-reply
+{
+  margin: 1rem 1.1rem;
+}
+/* -main div */
